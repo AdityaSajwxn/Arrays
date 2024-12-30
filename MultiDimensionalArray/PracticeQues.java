@@ -72,6 +72,12 @@ class TransposeOfMatrix{
     for(int i = 0; i<arr.length;i++){
         for(int j = 0; j<arr[i].length;j++){
             ans[i][j]= arr[j][i];
+        // This method has logical defficiences will only work on a square matrix meaning matrix having same number of rowa and column
+        /*it will not work if the matrix is having different number of rows and columns*/
+
+        //Swpaing of matrix[i][j] with maatrix[j][i] is a more logical approach and will work in both of the above case
+
+        
         }
     }
 return ans;
@@ -79,8 +85,17 @@ return ans;
 
   static void TransposeInPlace(int[][]arr){// transposing an array without making a new array
     for(int i = 0; i<arr.length;i++){
-        for(int j = 0; j<arr[i].length;j++){
-            arr[i][j]= arr[j][i];
+        //for(int j = 0; j<arr[i].length;j++){
+            //arr[i][j]= arr[j][i];
+/*This method will only give answer if the matreix is a square matrix meaning having same number of rows and column 
+ 
+ Swapping the coordinates is another approach of doing the same */
+
+         for (int j=i;j<arr[i].length;j++){  // j should start from i to avoid swapping numbers which are already been swapped
+            int temp = arr[i][j];
+            arr[i][j]=arr[j][i];
+            arr[j][i]=temp;
+
         }
     }
   }
@@ -104,6 +119,7 @@ return ans;
       //int[][] ans = transpose(arr);
       //RequiredFunctions.print2DArray(ans);
       TransposeInPlace(arr);
+    RequiredFunctions.print2DArray(arr);
       sc.close();  
 
   }
