@@ -12,6 +12,9 @@ class RequiredFunctions{
     } 
 }
 
+
+
+
 public class MatrixPractQues {
 
     static void ReverseMatrix(int[][]arr){
@@ -57,6 +60,10 @@ public static void main(String[]args){
 }
 
         
+
+
+
+
 class TransposeOfMatrix{
  // write a program to write a transpose a matrix entered by the user
  /*Transpose means rows becomes column and column becomes rows
@@ -124,6 +131,11 @@ return ans;
   }
 }
 
+
+
+
+
+
 class RotationOfMatrix{
     // rotating a matrix clockwise and anticlockwise.
   
@@ -179,4 +191,3 @@ class RotationOfMatrix{
  }
 }
 
-// try commit
