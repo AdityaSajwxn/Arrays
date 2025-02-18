@@ -1,4 +1,4 @@
-package MultiDimensionalArray;
+package MultiDimensionalArray.SumOFRectangle;
 import java.util.Scanner;
 
 class RequiredFunctions{
@@ -27,7 +27,7 @@ class RequiredFunctions{
 // Calculating Sum of a Rectangle (within the matrix) using 3 Methods
 
 //Method 1
-public class PrefixSum {
+public class M1PrefixSum {
 
 /*Given a matrix 'a' of dimension r*c and 2 coordinates (l1,r1)and(l2,r2).
 Return the sum of the rectangle from (l1,r1)to(l2,r2). 
