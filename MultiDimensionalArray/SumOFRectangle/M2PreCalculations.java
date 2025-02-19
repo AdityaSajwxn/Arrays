@@ -10,9 +10,7 @@ class RequiredFunctions{
             }
             System.out.println();
     }
-    } 
-
-   
+    }     
 }
 
 
