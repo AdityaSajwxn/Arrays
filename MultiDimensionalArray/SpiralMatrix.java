@@ -1,6 +1,6 @@
 package MultiDimensionalArray;
 import java.util.*;
-class RequiredFunctions{
+class RequiredFunctions2{
 
     static void print2DArray(int[][]arr){
         for(int i=0;i<arr.length;i++){
@@ -74,7 +74,7 @@ public static void main(String[]args){
          }
       }
       System.out.println("Input Matrix");
-      RequiredFunctions.print2DArray(arr);
+      RequiredFunctions2.print2DArray(arr);
       System.out.println("Spiral order of the given matrix is");
       PrintSpiralOrder(arr, r, c);
       sc.close();
@@ -128,7 +128,7 @@ public static void main(String[]args){
     int n = sc.nextInt();
     int[][] arr = generateSpiralMatrix(n);
     System.out.println("Spiral Matrix is ");
-    RequiredFunctions.print2DArray(arr);
+    RequiredFunctions2.print2DArray(arr);
     sc.close();
 }
 }

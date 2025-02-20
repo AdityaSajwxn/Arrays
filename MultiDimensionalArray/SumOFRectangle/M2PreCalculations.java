@@ -1,7 +1,7 @@
 package MultiDimensionalArray.SumOFRectangle;
 import java.util.Scanner;
 
-class RequiredFunctions{
+class RequiredFunctions1{
 
     static void print2DArray(int[][]arr){
         for(int i=0;i<arr.length;i++){
@@ -64,7 +64,7 @@ return sum;
          }
       }
       System.out.println("Input Matrix");
-      RequiredFunctions.print2DArray(arr);
+      RequiredFunctions1.print2DArray(arr);
       System.out.println("Enter rectangle boundaries l1,r1,l2,r2");
       int l1 = sc.nextInt();
       int r1 = sc.nextInt();
