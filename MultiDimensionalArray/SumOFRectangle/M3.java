@@ -44,14 +44,14 @@ int c = matrix[0].length;
     //other way considering the case where the value of r1 or l1 can be 0
      int ans = 0, sum =0, up=0, left=0, upleft=0;
     findprefixsumofmatrix(matrix);
-      sum = matrix[l1][r2];
+      sum = matrix[l1][r2]; // get the sum of the sub-matrix from (0,0) to (l1,r2)
       if(l1>1)
-      up = matrix[l1-1][r2];
+      up = matrix[l1-1][r2]; // subtract the sum of the sub-matrix above
       if(r1>1)
-      left = matrix[l2][r2-1];
+      left = matrix[l2][r2-1]; // subtract the sum of the sub-matrix to the left
       if(l1>1 && r1>1)
-      upleft = matrix[l1-1][r1-1];
-      ans = sum - up - left + upleft;
+      upleft = matrix[l1-1][r1-1]; // add back the sum of the overlapping sub-matrix at the top-left corner
+      ans = sum - up - left + upleft; // calculate the final answer
       return ans;
      
    }
